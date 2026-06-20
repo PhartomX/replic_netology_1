@@ -13,7 +13,10 @@
 
 Выполните конфигурацию master-slave репликации, примером можно пользоваться из лекции.
 
-master.cnf
+
+[maste-slave.yml](https://github.com/PhartomX/replic_netology_1/blob/main/master-slave.yml)
+
+`master.cnf`
 ```
 [mysqld]
 server-id=1
@@ -21,7 +24,7 @@ log-bin = mysql-bin
 binlog_format=ROW
 ```
 
-slave.cnf
+`slave.cnf`
 ```
 [mysqld]
 server-id=2
@@ -29,7 +32,7 @@ read_only = 1
 ```
 ![img1](https://github.com/PhartomX/replic_netology_1/blob/main/img/img1.png)
 
-![img2](https://github.com/PhartomX/replic_netology_1/blob/main/img/img2.png)
+
 
 ---
 

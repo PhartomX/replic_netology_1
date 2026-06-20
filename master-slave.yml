@@ -1,0 +1,24 @@
+services:
+  master_netology:
+    image: mysql:8.4
+    container_name: master_netology
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+    volumes:
+      - ./master.cnf:/etc/mysql/conf.d/my.cnf
+      - ./master.sql:/docker-entrypoint-initdb.d/start.sql
+    ports:
+      - "3306:3306"
+   
+  slave_netology:
+    image: mysql:8.4
+    container_name: slave_netology
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+    volumes:
+      - ./slave.cnf:/etc/mysql/conf.d/my.cnf
+      - ./slave.sql:/docker-entrypoint-initdb.d/start.sql
+    ports:
+      - "3307:3306"
+    depends_on:
+      - master_netology
