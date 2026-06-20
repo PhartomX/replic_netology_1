@@ -14,7 +14,8 @@
 Выполните конфигурацию master-slave репликации, примером можно пользоваться из лекции.
 
 `Файл Docker Compose:`
-[maste-slave.yml](https://github.com/PhartomX/replic_netology_1/blob/main/master-slave.yml)
+
+[master-slave.yml](https://github.com/PhartomX/replic_netology_1/blob/main/master-slave.yml)
 
 
 `master.cnf`
