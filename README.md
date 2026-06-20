@@ -14,6 +14,7 @@
 ![img1](https://github.com/PhartomX/replic_netology_1/blob/main/img/img1.png)
 
 ![img2](https://github.com/PhartomX/replic_netology_1/blob/main/img/img2.png)
+
 ---
 
 ### Задание 3*
