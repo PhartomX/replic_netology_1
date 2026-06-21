@@ -13,9 +13,10 @@
 
 Выполните конфигурацию master-slave репликации, примером можно пользоваться из лекции.
 
-`Файл Docker Compose:`
+`Создал два контейнера с mysql через Docker Compose:`
 
 [master-slave.yml](https://github.com/PhartomX/replic_netology_1/blob/main/master-slave.yml)
+
 
 
 `master.cnf`
@@ -32,6 +33,13 @@ binlog_format=ROW
 server-id=2
 read_only = 1
 ```
+
+![img2](https://github.com/PhartomX/replic_netology_1/blob/main/img/img2.png)
+
+![img3](https://github.com/PhartomX/replic_netology_1/blob/main/img/img3.png)
+
+`Статус реплики:`
+
 ![img1](https://github.com/PhartomX/replic_netology_1/blob/main/img/img1.png)
 
 
@@ -42,4 +50,4 @@ read_only = 1
 
 Выполните конфигурацию master-master репликации. Произведите проверку.
 
-![img3](https://github.com/PhartomX/replic_netology_1/blob/main/img/img3.png)
+![img4](https://github.com/PhartomX/replic_netology_1/blob/main/img/img4.png)
